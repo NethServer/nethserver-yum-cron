@@ -44,9 +44,3 @@ event_templates('nethserver-yum-cron-save', qw(
     /etc/yum/yum-cron.conf
 ));
 
-
-# services to launch on event
-foreach my $event (qw ( nethserver-yum-cron-update)) {
-event_services($event,
-    'yum-cron'=> 'restart');
-}
