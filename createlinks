@@ -9,6 +9,10 @@ use esmith::Build::CreateLinks qw(:all);
 my $event = 'nethserver-yum-cron-update';
 event_actions ( $event, 'initialize-default-databases' => '00');
 
+event_templates($event, qw(
+    /etc/cron.hourly/jobs.deny
+));
+
 #Template to expand
 templates2events("/etc/yum/yum-cron.conf", qw ( 
     nethserver-yum-cron-update
