@@ -1,0 +1,6 @@
+nethserver-yum-cron
+-------------------
+
+This repository has been merged into nethserver-base. The RPM package nethserver-base now provides nethserver-yum-cron symbol. See
+
+https://github.com/nethserver/nethserver-base
